@@ -29,7 +29,6 @@ class PublishingAPIRemovedSection
       base_path: base_path,
       format: 'gone',
       publishing_app: 'hmrc-manuals-api',
-      update_type: update_type,
       routes: [
         { path: base_path, type: :exact },
       ],
@@ -38,10 +37,6 @@ class PublishingAPIRemovedSection
 
   def content_id
     base_path_uuid
-  end
-
-  def update_type
-    'major'
   end
 
   def base_path
